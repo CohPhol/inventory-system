@@ -168,3 +168,53 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 - Run `vendor/bin/sail bin phpunit` to call the test runner directly. It accepts the same file path and `--filter=testName` arguments.
 
 </laravel-boost-guidelines>
+
+---
+
+# ShuttleStock Project Instructions
+
+## Project Purpose
+
+ShuttleStock is a personal badminton shuttlecock inventory and financial management application.
+
+## Intended Stack
+
+- Laravel 13
+- PHP 8.4
+- Livewire 4
+- Tailwind CSS 4
+- MySQL 8
+- Laravel Sail and Docker
+- Laravel Boost
+
+Treat versions as verified only when supported by current project evidence.
+
+## Planned Features
+
+1. Shuttlecock brands and product catalog.
+2. Opening inventory and inventory movement history.
+3. Purchases and stock adjustments.
+4. Sales, customer payments, and outstanding balances.
+5. Borrowed tubes and returns.
+6. Badminton queue sessions and shuttlecock consumption.
+7. Revenue, expenses, inventory valuation, and profit reporting.
+
+## Workflow Rules
+
+- Read AGENTS.md and PROJECT_STATUS.md before starting each new task.
+- Follow all applicable existing .ai/rules instructions.
+- Inspect existing code and sibling files before implementing features.
+- Work on one explicitly approved task at a time.
+- Do not recreate the application or redo completed work without evidence that it is necessary.
+- Preserve existing user work and unrelated changes.
+- Do not change dependencies without authorization.
+- Do not run migrations, modify database data, delete files, reset databases, or remove Docker volumes unless explicitly authorized for the current task.
+- Do not expose secrets.
+- Add relevant tests for application changes, run the narrowest appropriate tests, and report actual results.
+- Never claim a test or command succeeded unless its output confirms success.
+- Before significant architectural changes, explain the design and its trade-offs.
+- Keep inventory movements auditable; do not implement inventory changes as unexplained direct edits to a stock count.
+- Keep sales revenue, cash collected, inventory value, and profit conceptually distinct.
+- Treat borrowing separately from sales.
+- Update PROJECT_STATUS.md after each significant completed task, recording verified results and remaining work.
+- If session context is missing or interrupted, recover from PROJECT_STATUS.md and current repository evidence rather than guessing.
